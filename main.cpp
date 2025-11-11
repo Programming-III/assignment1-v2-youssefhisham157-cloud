@@ -9,7 +9,7 @@
 using namespace std;
 
 class Person {
-protected:
+private:
     string name;
     int id;
 public:
@@ -24,6 +24,13 @@ public:
     void display() {
         cout << "\n\nName: " << name << "\n\nID: " << id << endl;
     }
+
+    string getName() {
+        return name;
+    }
+    int getID(){
+        return id;
+    }
     ~Person(){}
 };
 
@@ -37,8 +44,6 @@ public:
         major = m;
     }
     Student():Person(){
-        name = "";
-        id = 0;
         major = "";
         yearLevel = 0;
     }
@@ -47,12 +52,7 @@ public:
         Person::display();
         cout << "\nYear: " << yearLevel << "\n\nMajor: " << major << endl;
     }
-    string getName() {
-        return name;
-    }
-    int getID(){
-        return id;
-    }
+    
     ~Student(){}
 };
 
