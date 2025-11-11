@@ -106,9 +106,9 @@ class Course{
     }
 
     void displayCourseInfo(){
-        cout<<"\nCourse: " << courseName << "\n\nMax Students: " << maxStudents << "Currently Enrolled: "<< endl;
+        cout<<"\nCourse: " << courseName << "\n\nMax Students: " << maxStudents << "\n\nCurrently Enrolled: ";
         for(int i =0; i < currentStudents; i++){
-            cout <<students[i].getName() <<"(ID:" << students[i].getID() << ")\n";
+            cout << endl << endl << students[i].getName() <<"(ID:" << students[i].getID() << ")\n";
         }
     }
     ~Course(){
