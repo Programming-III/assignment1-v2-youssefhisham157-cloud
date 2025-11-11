@@ -13,8 +13,6 @@ public:
     Student(string n, int i, int y, string m);
     Student();
     void display();
-    string getName();
-    int getID();
     ~Student();
 };
 
