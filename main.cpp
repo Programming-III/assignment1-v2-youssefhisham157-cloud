@@ -22,7 +22,7 @@ public:
         id = 0;
     }
     void display() {
-        cout << "\n\nName: " << name << "\n\nID: " << id << endl;
+        cout << "\n\nName: " << name << endl;
     }
 
     string getName() {
@@ -106,9 +106,9 @@ class Course{
     }
 
     void displayCourseInfo(){
-        cout<<"\nCourse: " << courseName << "\n\nMax Students: " << maxStudents << endl;
+        cout<<"\nCourse: " << courseName << "\n\nMax Students: " << maxStudents << "Currently Enrolled: "<< endl;
         for(int i =0; i < currentStudents; i++){
-            cout << endl << students[i].getName() <<"(ID:" << students[i].getID() << ")\n";
+            cout <<students[i].getName() <<"(ID:" << students[i].getID() << ")\n";
         }
     }
     ~Course(){
